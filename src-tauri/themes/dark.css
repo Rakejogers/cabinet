@@ -1,0 +1,61 @@
+/* name: Dark */
+:root {
+  color-scheme: dark;
+
+  --font-ui: "Inter", "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif;
+
+  --bg: #0e0f13;
+  --bg-elevated: rgba(18, 19, 25, 0.82);
+  --surface: #181a21;
+  --surface-hover: #20232c;
+  --border: rgba(255, 255, 255, 0.07);
+  --border-strong: rgba(255, 255, 255, 0.14);
+
+  --text: #eceef3;
+  --text-muted: #9a9fad;
+  --text-faint: #6b7080;
+
+  --accent: #7c8cff;
+  --accent-hover: #95a2ff;
+  --accent-text: #0b0d1a;
+  --accent-soft: rgba(124, 140, 255, 0.14);
+
+  --success: #4fd18b;
+  --danger: #ff6b6b;
+
+  --source-steam: #66c0f4;
+  --source-epic: #d6d6d6;
+
+  --placeholder-saturation: 32%;
+  --placeholder-lightness: 26%;
+
+  --radius-card: 12px;
+  --radius-control: 9px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --shadow-card-hover: 0 18px 40px -12px rgba(0, 0, 0, 0.75);
+  --cover-overlay: linear-gradient(to top, rgba(8, 9, 12, 0.92) 0%, rgba(8, 9, 12, 0.35) 45%, transparent 70%);
+
+  --card-min-width: 168px;
+
+  /* Charts: a single series uses --chart-bar on a --chart-track of the same hue. */
+  --chart-bar: #6f7ff0;
+  --chart-track: rgba(111, 127, 240, 0.16);
+
+  /* Activity heatmap: empty day, then four steps of one hue from least to most
+     playtime (validated as a monotone ramp against this theme's surface). */
+  --heat-empty: rgba(255, 255, 255, 0.06);
+  --heat-1: #414ba3;
+  --heat-2: #5866d6;
+  --heat-3: #7886f4;
+  --heat-4: #adb6ff;
+
+  /* Home banner: scrim laid over hero art so text stays readable. */
+  --hero-scrim: linear-gradient(90deg, var(--bg) 0%, color-mix(in srgb, var(--bg) 82%, transparent) 34%, transparent 72%),
+    linear-gradient(0deg, var(--bg) 0%, transparent 38%);
+
+  /* Text and glass panel on top of the banner art. */
+  --hero-text: #f3f4f7;
+  --hero-text-muted: rgba(243, 244, 247, 0.74);
+  --hero-text-faint: rgba(243, 244, 247, 0.52);
+  --hero-panel: rgba(14, 15, 19, 0.6);
+}
